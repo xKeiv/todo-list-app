@@ -10,17 +10,17 @@
 </head>
 <body>
 <div class="appContainer">
-    <nav class="navbar">
-        <button id="addBtn">Add</button>
-    </nav>
+    <form class="navbar">
+        <button type="submit" id="addBtn">Add</button><input type="text" name="taskinput" id="taskInput" placeholder="Describe your task" />
+    </form>
 
     <div class="appTaskArea">
-        <form><input type="text" name="taskinput" id="taskInput" placeholder="What's your task for now?" /></form>
+        <small>"What's your task for now?"</small>
 
         <div class="taskList">
             <h2>Tasks:</h2>
                 <div id="tasks">
-                <form><input type="text" name="taskinput" id="taskInput" placeholder="What's your task for now?" /></form>
+                    <!-- There's gonna be something here-->
                 </div>
             <h2>Completed Tasks:</h2>
         </div>
