@@ -4,6 +4,6 @@
  ## Color Palette
 
 
-⋅⋅*#0f2027 - Gradient Element 1
-⋅⋅*#203a43 - Gradient Element 2
-⋅⋅*#2c5364 - Gradient Element 3
+- #0f2027 - Gradient Element 1
+- #203a43 - Gradient Element 2
+- #2c5364 - Gradient Element 3
