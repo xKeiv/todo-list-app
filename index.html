@@ -11,26 +11,26 @@
 <body>
 <div class="appContainer">
     <nav class="navbar">
-        <form class="panelApp">
-            <input type="button" value="Add" class="addBtn">
-        </form>
+        <button id="addBtn">Add</button>
     </nav>
-    <main>
-    <form class="appblock">
-        <h2>Current Tasks:</h2>
-        
-        <h2>Completed Tasks:</h2>
-    </form>
-    </main>
-    <div class="bottomApp">
-        <form>
-            <input type="button" value="Clear List Button" class="ClearLBtn">
-        </form>
+
+    <div class="appTaskArea">
+        <form><input type="text" name="taskinput" id="taskInput" placeholder="What's your task for now?" /></form>
+
+        <div class="taskList">
+            <h2>Tasks:</h2>
+                <div id="tasks">
+                </div>
+            <h2>Completed Tasks:</h2>
+        </div>
+    </div>
+
+    <div class="appFooter">
+        <button id="clAlltaskBtn">Clear All</button>
     </div>
 </div>
 
-
-
+<footer>Created by xKeiv (2022)</footer>
     <script src="index.js"></script>
 </body>
 </html>

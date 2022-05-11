@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 16px;
+    
+    background: -webkit-linear-gradient(to right, hsl(198, 44%, 11%), hsl(195, 35%, 19%), hsl(198, 39%, 28%));
+    background: linear-gradient(to right, hsl(198, 44%, 11%), hsl(195, 35%, 19%), hsl(198, 39%, 28%));
+
+    color: hsl(0, 0%, 100%)
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/**/
+
+.appContainer {
+    border: 2px hsl(0, 0%, 100%) solid;
+    max-width: 800px;
+}
