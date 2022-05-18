@@ -37,7 +37,7 @@ h2 {
     border: 2px hsl(0, 0%, 100%) solid;
 }
 
-.appContainer .navbar {
+.appContainer .mynavbar {
     display: flex;
     align-items: center;
 }

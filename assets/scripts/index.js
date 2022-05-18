@@ -7,7 +7,18 @@ const clearAll = document.getElementById('clAlltaskBtn');
 
 const removeTask = (event) => {
     event.target.closest('.task').remove();
-};
+}
+
+const moveTask = (event) => {
+    const complTasks = document.getElementById('complTasks');
+    const tasks = document.getElementById('tasks');
+
+    if (event.target.closest('#tasks')) {
+        complTasks.appendChild(event.target.closest('.task'))
+    } else {
+        tasks.appendChild(event.target.closest('.task'))
+    }
+}
 
 addForm.addEventListener (
     'submit',
@@ -36,6 +47,15 @@ addForm.addEventListener (
         task.classList.add('task');
 
         target.appendChild(task);
+
+        //Moving
+
+        const moveBtn = document.createElement('a');
+        moveBtn.href = '#move'; 
+        moveBtn.innerHTML = 'Move';
+        moveBtn.addEventListener ('click', moveTask);
+        task.append(moveBtn);
+
 
         input.value = '';
     }
