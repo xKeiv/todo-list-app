@@ -1,8 +1,9 @@
-//Practice 1. You must make a "move one" cmd by click to move it to section "completed tasks".
+//1. Create ClrButton for each tasklist for each user.
+//2. Bootstrap Styling
+//3. When adding task, Select html-tag should restart to default "Choose your user" 
 
-//Practice 2. Creating an order. (++)
 
-const addForm = document.querySelector('.navbar');
+const addForm = document.querySelector('.mynavbar');
 const clearAll = document.getElementById('clAlltaskBtn');
 
 const removeTask = (event) => {
@@ -10,10 +11,10 @@ const removeTask = (event) => {
 }
 
 const moveTask = (event) => {
-    const complTasks = document.getElementById('complTasks');
-    const tasks = document.getElementById('tasks');
+    const complTasks = event.target.closest('.taskList').querySelector('.complTasks'); //document.getElementByClass('complTasks');
+    const tasks = event.target.closest('.taskList').querySelector('.tasks'); //document.getElementByClass('tasks');
 
-    if (event.target.closest('#tasks')) {
+    if (event.target.closest('.tasks')) {
         complTasks.appendChild(event.target.closest('.task'))
     } else {
         tasks.appendChild(event.target.closest('.task'))
@@ -26,13 +27,18 @@ addForm.addEventListener (
         event.preventDefault();
 
         const input = document.getElementById('taskInput');
+        const select = document.getElementById('selectBtn');
 
         if (input.value === '') {
             alert('No Task has been added');
             return;
         }
 
-        const target = document.querySelector('#tasks');
+        if (select.value === '') {
+            alert('No user has been selected');
+            return;
+        }
+        const target = document.getElementById(select.value);//querySelector('.tasks');
 
         const task = document.createElement('div');
 

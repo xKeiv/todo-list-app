@@ -45,7 +45,7 @@ h2 {
 
 /**/
 
-#addBtn, #clAlltaskBtn {
+/*#addBtn*/ #clAlltaskBtn {
     border: 3px #fff solid;
     border-radius: 15px;
     background: #000;
@@ -57,12 +57,12 @@ h2 {
     
 }
 
-#addBtn:hover, #clAlltaskBtn:hover {
+/*#addBtn:hover*/ #clAlltaskBtn:hover {
     opacity: 0.7;
     transition: 0.2s;
 }
 
-#addBtn:active, #clAlltaskBtn:active {
+/*#addBtn:active*/ #clAlltaskBtn:active {
     opacity: 0.7;
     background:hsl(150, 35%, 19%);
     transition: 0.2s;

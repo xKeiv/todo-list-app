@@ -13,7 +13,14 @@
 <div class="appContainer container">
     <div class="row">
         <form class="mynavbar col-12">
-            <button type="submit" id="addBtn">Add</button><input type="text" name="taskinput" id="taskInput" placeholder="Describe your task" />
+            <button type="submit" id="addBtn" class="btn btn-primary btn-sm">Add</button><br><input type="text" name="taskinput" id="taskInput" placeholder="Describe your task" />
+            <select name="Users" id="selectBtn" class="">
+                <option value="">Choose your user list</option>
+                <option value="user1">User 1</option>
+                <option value="user2">User 2</option>
+                <option value="user3">User 3</option>
+                <option value="user4">User 4</option>
+            </select>
         </form>
 
         <div class="appTaskArea col-xl-3 col-md-6 col-12">
@@ -21,11 +28,11 @@
 
             <div class="taskList">
                 <h2>Tasks:</h2>
-                    <div id="tasks">
+                    <div class="tasks" id="user1">
                         <!-- There's gonna be something here-->
                     </div>
                 <h2>Completed Tasks:</h2>
-                    <div id="complTasks">
+                    <div class="complTasks">
                         <!-- There's gonna be something here-->
                     </div>
             </div>
@@ -36,11 +43,11 @@
 
             <div class="taskList">
                 <h2>Tasks:</h2>
-                    <div id="tasks">
+                    <div class="tasks" id="user2">
                         <!-- There's gonna be something here-->
                     </div>
                 <h2>Completed Tasks:</h2>
-                    <div id="complTasks">
+                    <div class="complTasks">
                         <!-- There's gonna be something here-->
                     </div>
             </div>
@@ -51,11 +58,11 @@
 
             <div class="taskList">
                 <h2>Tasks:</h2>
-                    <div id="tasks">
+                    <div class="tasks" id="user3">
                         <!-- There's gonna be something here-->
                     </div>
                 <h2>Completed Tasks:</h2>
-                    <div id="complTasks">
+                    <div class="complTasks">
                         <!-- There's gonna be something here-->
                     </div>
             </div>
@@ -66,11 +73,11 @@
 
             <div class="taskList">
                 <h2>Tasks:</h2>
-                    <div id="tasks">
+                    <div class="tasks" id="user4">
                         <!-- There's gonna be something here-->
                     </div>
                 <h2>Completed Tasks:</h2>
-                    <div id="complTasks">
+                    <div class="complTasks">
                         <!-- There's gonna be something here-->
                     </div>
             </div>
@@ -81,8 +88,7 @@
         </div>
     </div>
 </div>
-
+<script src="assets/scripts/index.js"></script>
 <footer>Created by xKeiv (2022)</footer>
-    <script src="assets/scripts/index.js"></script>
 </body>
 </html>
