@@ -85,7 +85,7 @@ clearAll.addEventListener (
 
 clearUser1.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task');
+        const tasks = document.querySelectorAll('.taskList .task #user1');
 
         tasks.forEach((task) => task.remove());
     }
@@ -93,7 +93,7 @@ clearUser1.addEventListener (
 
 clearUser2.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task');
+        const tasks = document.querySelectorAll('.taskList .task #user2');
 
         tasks.forEach((task) => task.remove());
     }
@@ -101,7 +101,7 @@ clearUser2.addEventListener (
 
 clearUser3.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task');
+        const tasks = document.querySelectorAll('.taskList .task #user3');
 
         tasks.forEach((task) => task.remove());
     }
@@ -109,7 +109,7 @@ clearUser3.addEventListener (
 
 clearUser4.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task');
+        const tasks = document.querySelectorAll('.taskList .task #user4');
 
         tasks.forEach((task) => task.remove());
     }
