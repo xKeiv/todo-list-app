@@ -1,10 +1,14 @@
 //1. Create ClrButton for each tasklist for each user.
 //2. Bootstrap Styling
-//3. When adding task, Select html-tag should restart to default "Choose your user" 
+//3. When adding task, Select html-tag should restart to default "Choose your user" [DONE]
 
 
 const addForm = document.querySelector('.mynavbar');
 const clearAll = document.getElementById('clAlltaskBtn');
+const clearUser1 = document.getElementById('clAlltaskBtnUser1');
+const clearUser2 = document.getElementById('clAlltaskBtnUser2');
+const clearUser3 = document.getElementById('clAlltaskBtnUser3');
+const clearUser4 = document.getElementById('clAlltaskBtnUser4');
 
 const removeTask = (event) => {
     event.target.closest('.task').remove();
@@ -64,10 +68,46 @@ addForm.addEventListener (
 
 
         input.value = '';
+        select.value = '';
     }
 );
 
+//Clear Buttons
+
+//Practice 1 (I need to manipulate it)
 clearAll.addEventListener (
+    'click', () => {
+        const tasks = document.querySelectorAll('.taskList .task');
+
+        tasks.forEach((task) => task.remove());
+    }
+);
+
+clearUser1.addEventListener (
+    'click', () => {
+        const tasks = document.querySelectorAll('.taskList .task');
+
+        tasks.forEach((task) => task.remove());
+    }
+);
+
+clearUser2.addEventListener (
+    'click', () => {
+        const tasks = document.querySelectorAll('.taskList .task');
+
+        tasks.forEach((task) => task.remove());
+    }
+);
+
+clearUser3.addEventListener (
+    'click', () => {
+        const tasks = document.querySelectorAll('.taskList .task');
+
+        tasks.forEach((task) => task.remove());
+    }
+);
+
+clearUser4.addEventListener (
     'click', () => {
         const tasks = document.querySelectorAll('.taskList .task');
 
