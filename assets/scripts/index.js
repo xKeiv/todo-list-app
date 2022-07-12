@@ -1,14 +1,12 @@
-//1. Create ClrButton for each tasklist for each user.
-//2. Bootstrap Styling
-//3. When adding task, Select html-tag should restart to default "Choose your user" [DONE]
-
+//1. Bootstrap Styling (Minimal Use of CSS)
+//2. How can I optimalize deleting task-list
 
 const addForm = document.querySelector('.mynavbar');
 const clearAll = document.getElementById('clAlltaskBtn');
-const clearUser1 = document.getElementById('clAlltaskBtnUser1');
-const clearUser2 = document.getElementById('clAlltaskBtnUser2');
-const clearUser3 = document.getElementById('clAlltaskBtnUser3');
-const clearUser4 = document.getElementById('clAlltaskBtnUser4');
+const clearUser1 = document.getElementById('clUser1');
+const clearUser2 = document.getElementById('clUser2');
+const clearUser3 = document.getElementById('clUser3');
+const clearUser4 = document.getElementById('clUser4');
 
 const removeTask = (event) => {
     event.target.closest('.task').remove();
@@ -85,7 +83,7 @@ clearAll.addEventListener (
 
 clearUser1.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task #user1');
+        const tasks = document.querySelectorAll('#user1 .task, #complTasksUser1 .task');
 
         tasks.forEach((task) => task.remove());
     }
