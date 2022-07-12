@@ -2,7 +2,7 @@
 //2. How can I optimalize deleting task-list
 
 const addForm = document.querySelector('.mynavbar');
-const clearAll = document.getElementById('clAlltaskBtn');
+const clearAll = document.getElementById('clrAll');
 const clearUser1 = document.getElementById('clUser1');
 const clearUser2 = document.getElementById('clUser2');
 const clearUser3 = document.getElementById('clUser3');
@@ -83,7 +83,7 @@ clearAll.addEventListener (
 
 clearUser1.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('#user1 .task, #complTasksUser1 .task');
+        const tasks = document.querySelectorAll('#user1 .task, #complUser1 .task');
 
         tasks.forEach((task) => task.remove());
     }
@@ -91,7 +91,7 @@ clearUser1.addEventListener (
 
 clearUser2.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task #user2');
+        const tasks = document.querySelectorAll('#user2 .task, #complUser2 .task');
 
         tasks.forEach((task) => task.remove());
     }
@@ -99,7 +99,7 @@ clearUser2.addEventListener (
 
 clearUser3.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task #user3');
+        const tasks = document.querySelectorAll('#user3 .task, #complUser3 .task');
 
         tasks.forEach((task) => task.remove());
     }
@@ -107,7 +107,7 @@ clearUser3.addEventListener (
 
 clearUser4.addEventListener (
     'click', () => {
-        const tasks = document.querySelectorAll('.taskList .task #user4');
+        const tasks = document.querySelectorAll('#user4 .task, #complUser4 .task');
 
         tasks.forEach((task) => task.remove());
     }

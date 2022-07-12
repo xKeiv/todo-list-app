@@ -10,8 +10,9 @@ body {
     font-family: 'Red Hat Text', sans-serif;
     font-size: 16px;
     
-    background: -webkit-linear-gradient(to right, hsl(198, 44%, 11%), hsl(195, 35%, 19%), hsl(198, 39%, 28%));
-    background: linear-gradient(to right, hsl(198, 44%, 11%), hsl(195, 35%, 19%), hsl(198, 39%, 28%));
+    /*background-color:hsl(150, 35%, 19%);
+    /*background: -webkit-linear-gradient(to right, hsl(198, 44%, 11%), hsl(195, 35%, 19%), hsl(198, 39%, 28%));
+    background: linear-gradient(to right, hsl(198, 44%, 11%), hsl(195, 35%, 19%), hsl(198, 39%, 28%));*/
 
     color: hsl(0, 0%, 100%);
     
@@ -23,7 +24,7 @@ h2 {
 
 /**/
 
-.appContainer {
+/* .appContainer {
     border: 2px hsl(0, 0%, 100%) solid;
     max-width: 650px;
     background:hsl(198, 39%, 28%);
@@ -43,9 +44,7 @@ h2 {
 }
 
 
-/**/
-
-/*#addBtn*/ #clAlltaskBtn {
+#addBtn #clAlltaskBtn {
     border: 3px #fff solid;
     border-radius: 15px;
     background: #000;
@@ -57,13 +56,13 @@ h2 {
     
 }
 
-/*#addBtn:hover*/ #clAlltaskBtn:hover {
+#clAlltaskBtn:hover {
     opacity: 0.7;
     transition: 0.2s;
 }
 
-/*#addBtn:active*/ #clAlltaskBtn:active {
+#clAlltaskBtn:active {
     opacity: 0.7;
     background:hsl(150, 35%, 19%);
     transition: 0.2s;
-}
+} */
