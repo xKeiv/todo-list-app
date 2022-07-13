@@ -48,7 +48,7 @@ addForm.addEventListener (
 
         const removeBtn = document.createElement('a');
         removeBtn.href = '#remove'; 
-        removeBtn.innerHTML = 'Remove';
+        removeBtn.innerHTML = '<button type="button" class="btn btn-danger btn-small m-1">Remove</button>';
         removeBtn.addEventListener ('click', removeTask);
         task.appendChild(removeBtn);
         
@@ -60,7 +60,7 @@ addForm.addEventListener (
 
         const moveBtn = document.createElement('a');
         moveBtn.href = '#move'; 
-        moveBtn.innerHTML = 'Move';
+        moveBtn.innerHTML = '<button type="button" class="btn btn-success btn-small m-1">Move</button>';
         moveBtn.addEventListener ('click', moveTask);
         task.append(moveBtn);
 
