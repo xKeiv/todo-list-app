@@ -8,6 +8,8 @@ const clearUser2 = document.getElementById('clUser2');
 const clearUser3 = document.getElementById('clUser3');
 const clearUser4 = document.getElementById('clUser4');
 
+const clearUser = document.querySelectorAll('.clUser')
+
 const removeTask = (event) => {
     event.target.closest('.task').remove();
 }
