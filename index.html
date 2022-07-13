@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
 </head>
 <body class="bg-dark text-light">
-<div class="appContainer container-fluid">
+<div class="appContainer container">
     <div class="row">
-        <form class="mynavbar col-12 input-group input-group-sm mb-3 bg-dark">
+        <form class="mynavbar col-12 input-group input-group-sm mb-3 bg-dark flex-wrap">
             <button type="submit" id="addBtn" class="btn btn-primary btn-sm">Add</button><br><input type="text" name="taskinput" class="form-control"  id="taskInput" placeholder="Describe your task" aria-label="Describe your task" aria-describedby="basic-addon1" />
             <select name="Users" id="selectBtn" class="form-select form-select-sm" aria-label=".form-select-sm example">
                 <option selected value="">Choose your user list</option>
@@ -23,7 +23,8 @@
             </select>
         </form>
 
-        <div class="appTaskArea col-xl-3 col-12 border border-info bg-secondary rounded-start m-1">
+        <div class="col-xl-3 col-12 flex-wrap">
+            <div class="p-1 appTaskArea border border-info bg-secondary rounded-start flex-wrap">
             <small>"What's your task for now?"</small>
 
             <div class="taskList">
@@ -36,10 +37,12 @@
                         <!-- There's gonna be something here-->
                     </div>
             </div>
-            <button id="clUser1" type="button" class="btn btn-dark">Clear All</button>
+            <button id="clUser1" type="button" class="btn btn-dark clUser">Clear All</button>
+            </div>
         </div>
 
-        <div class="appTaskArea col-xl-3 col-md-6 col-12 border border-info bg-secondary m-1">
+        <div class="col-xl-3 col-12 flex-wrap">
+            <div class="p-1 appTaskArea border border-info bg-secondary flex-wrap">
             <small>"What's your task for now?"</small>
 
             <div class="taskList">
@@ -52,10 +55,12 @@
                         <!-- There's gonna be something here-->
                     </div>
             </div>
-            <button id="clUser2" type="button" class="btn btn-dark">Clear All</button>
+            <button id="clUser2" type="button" class="btn btn-dark clUser">Clear All</button>
+            </div>
         </div>
 
-        <div class="appTaskArea col-xl-3 col-md-6 col-12 border border-info bg-secondary m-1">
+        <div class="col-xl-3 col-12 flex-wrap">
+            <div class="p-1 appTaskArea border border-info bg-secondary flex-wrap">
             <small>"What's your task for now?"</small>
 
             <div class="taskList">
@@ -68,10 +73,12 @@
                         <!-- There's gonna be something here-->
                     </div>
             </div>
-            <button id="clUser3" type="button" class="btn btn-dark">Clear All</button>
+            <button id="clUser3" type="button" class="btn btn-dark clUser">Clear All</button>
+            </div>
         </div>
 
-        <div class="appTaskArea col-xl-3 col-md-6 col-12 border border-info bg-secondary rounded-end m-1 p-1">
+        <div class="col-xl-3 col-12 flex-wrap">
+            <div class="p-1 appTaskArea border border-info bg-secondary rounded-end flex-wrap">
             <small>"What's your task for now?"</small>
 
             <div class="taskList">
@@ -84,10 +91,11 @@
                         <!-- There's gonna be something here-->
                     </div>
             </div>
-            <button id="clUser4" type="button" class="btn btn-dark">Clear All</button>
+            <button id="clUser4" type="button" class="btn btn-dark clUser">Clear All</button>
+            </div>
         </div>
         
-        <div class="appFooter col-12">
+        <div class="appFooter col-12 p-1">
             <button id="clrAll" type="button" class="btn btn-danger">Clear All</button>
         </div>
     </div>
