@@ -1,5 +1,9 @@
-//1. Bootstrap Styling (Minimal Use of CSS)
-//2. How can I optimalize deleting task-list
+//+ Bootstrap Styling (Minimal Use of CSS)
+// 1. Ogarnij Fetch'a w JS
+// 2. Stwórz formularz zapytania
+// 3. Podpowiedzi
+// 4. Szczegolowe informacje: Imię, nazwisko itp.
+// 5. Szczególy postaci: homeworld, filmy, gatunek itp.
 
 const addForm = document.querySelector('.mynavbar');
 const clearAll = document.getElementById('clrAll');
@@ -10,6 +14,7 @@ const clearAll = document.getElementById('clrAll');
 
 const clearUser = document.querySelectorAll('.clUser')
 
+//Loop
 clearUser.forEach((clrButton) => {
 
  clrButton.addEventListener('click', () =>
